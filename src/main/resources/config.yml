@@ -1,0 +1,49 @@
+Prefix: '&f[&eBetterBundle&f] '
+
+Language: 'en-US'
+
+Debug-mode: false
+
+Bundle:
+  #收纳袋头颅皮肤
+  Head-textures: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmI4NWY5OWFmN2M1MDczMWRiMGY5MzcwOGMyNDg5OTI0NzdjOTBiNGQyY2Q0ZDE1Zjc3NDU3YzdmNDk5NzBlOSJ9fX0="
+  #是否开启收纳袋时的提示信息
+  Open_message: true
+  #是否允许收纳袋(非自身收納袋)放入收纳袋中
+  AllowBundleIn: false
+  #是否允许收纳袋放入头盔槽中
+  AllowBundlePutInHelmet: false
+  Sound:
+    Enabled: true
+    Value: 'UI_BUTTON_CLICK:1:1'
+
+GUI:
+  Upgrade_menu:
+    # Shift+F 打开收纳袋升级菜单
+    Keys: true
+    Open_message: true
+    Sound:
+      Enabled: true
+      Value: 'UI_BUTTON_CLICK:1:2'
+
+Upgrade_menu:
+  Sound_enabled: true
+  Success_value: 'ENTITY_PLAYER_LEVELUP:1:1.1'
+  Failed_value: 'ENTITY_SHULKER_HURT_CLOSED:1:0.9'
+
+Slot_upgrade:
+  Settings:
+    #模式为Normal时, 将以value值作为最小值 每一等级逐渐递增+1点数
+    #模式为Static时, 将以value值作为固定值 每级消耗固定的点数
+    Mode: Normal
+    Value: 1
+
+#Mysql禁用时，使用SQLite存储
+Databases:
+  MySQL: false
+  host: localhost
+  port: 3306
+  user: root
+  password: root
+  database: betterbundle
+  allowPublicKeyRetrieval: false

@@ -1,0 +1,28 @@
+name: BetterBundle
+version: '${version}'
+main: com.yxmax.betterbundle.BetterBundle
+api-version: '1.14'
+folia-supported: true
+
+commands:
+  BetterBundle:
+    aliases: bbundle
+permissions:
+  betterbundle.command.upgrade:
+    default: true
+  betterbundle.bundle.open:
+    default: true
+  betterbundle.command.info:
+    default: op
+  betterbundle.command.check:
+    default: op
+  betterbundle.command.get:
+    default: op
+  betterbundle.command.give:
+    default: op
+  betterbundle.command.reload:
+    default: op
+
+depend: [Vault]
+softdepend:
+  - PlaceholderAPI

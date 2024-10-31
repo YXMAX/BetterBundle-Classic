@@ -1,0 +1,85 @@
+Bundle:
+  Display:
+    Name: '&eBundle'
+    Lore:
+      - '&fWeapons/Items expansion backpack'
+      - '&6Shift+F &fto open upgrade menu'
+
+GUI:
+  Bundle:
+    Title: 'Bundle %bundle_id%'
+    Locked: '&cLocked'
+  Slotupgrade:
+    Title: 'Bundle Upgrade #%upgrade_page%'
+    Bundle:
+      Name: '&aUpgrade_Coin: &e%betterbundle_coin%'
+      Lore:
+        - '&fUse coin to upgrade level'
+        - '&fExpanded one slot per upgrade'
+    Locked:
+      Name: '&aLevel.&6%upgrade_level% &f[&cLocked&f]'
+      Lore:
+        - '&fYou are not arrived this level'
+        - '&6Pre-condition: &fArrived &7%pre_level% &flevel'
+        - ''
+        - '&fRequired coin: &c%require_coin%'
+    Unlocked:
+      Name: '&aLevel.&6%upgrade_level% &f[&aUpgradable&f]'
+      Lore:
+        - '&fYou are premit to upgrade this level'
+        - '&aClick to upgrade'
+        - ''
+        - '&bRequired coin: &a%require_coin%'
+    Upgraded:
+      Name: '&aLevel.&6%upgrade_level% &f[&6Upgraded&f]'
+      Lore:
+        - '&fYou are already upgrade this level'
+        - '&fThis level of the slot is unlocked..'
+    Previous:
+      Name: '&cPrevious'
+    Next:
+      Name: '&aNext'
+
+
+Messages:
+  Nopermission: "&cYou do not have permission to use this command!"
+  Reload: "&aPlugin reloaded..."
+  Nomode: "&cPlease enter the correct bundle type (Massive/Huge/Large/Medium/Tiny/Mini)"
+  Noupgrade: "&cPlease enter whether the bundle can be upgraded (true/false)"
+  Nomaxslot: "&cPlease enter the maximum bundle level (18/27/36/45/54)"
+  Unknown: "&cUnknown Command!"
+  Massive_error: "&c54 sizes bundle cannot be upgraded, please reset !"
+  Maxslot_error: "&cPlease enter a value greater than the current bundle type (Multiples of 9) !"
+  Noputbundle: "&cPut a bundle into a bundle is not allowed"
+  Noputhelmet: "&cPut a bundle into helmet slot is not allowed"
+  Player_error: "&cUnknown player..."
+  Upgrade_false: "&cThis bundle is not allow to upgrade!"
+  Upgrade_true: "&aOpening bundle upgrade selection menu.."
+  Upgrade_success: "&aSuccessfully upgraded &eBundle [%bundle_id%] &ato Level.&b%upgrade_level% "
+  Upgrade_fail: "&cYou don't have enough coin, Unable to upgrade Bundle [%bundle_id%]"
+  Get_bundle_success_third: "&aPlayer %player% get the Bundle [%bundle_id%]"
+  Info_player_empty: "&cPlease enter the player name.."
+  Info_fail: "&cCannot find the player %player% bundle information"
+  Info_title: "&eCheck &f%player% &ebundle detail:"
+  Info_detail: "&f- &eBundle[ %info_bundle_id% ]: Base_Slot:&a%info_bundle_base_slot% &eLevel:&a%info_bundle_level%  &eMax_Slot:&a%info_bundle_max_slot% &eUpgradable:&a%info_bundle_upgradable%"
+  Check_id_empty: "&cPlease enter a ID!"
+  Check_not_id: "&cInvalid ID!"
+  Check_unknown_id: "&cBundle ID:%check_id% is not exist.."
+  Check_success: "&aSuccessfully open &eBundle [%check_id%]"
+  Get_bundle_success_player: "&aYou get the Bundle [%bundle_id%]"
+  Onlyplayer: "&cThis action is only available for players..."
+  Give_error_type: "&cPlease enter the correct given type (Bundle/Coin/Point)"
+  Give_error_onlineplayer: "&cPlease enter a correct online player"
+  Give_error_player: "&cUnknown player"
+  Give_not_id: "&cInvalid ID!"
+  Give_not_num: "&cInvalid number!"
+  Give_id_not_exist: "&cThis BundleID is not exist"
+  Give_coin_success: "&aSuccessfully give &e%give_coin% &acoins to &f%player%"
+  Give_coin_player_msg: "&aYou received &e%give_coin% &acoins"
+  Give_bundle_success: "&aSuccessfully give &eBundle [%bundle_id%] &ato &f%player%"
+  Give_bundle_player_msg: "&aYou received &eBundle [%bundle_id%]"
+  Open_upgrade_menu: "&eOpening Bundle[%bundle_id%] &6Upgrade &emenu"
+  Open_bundle: "&eOpening Bundle[%bundle_id%]"
+  Bundle_not_exist: "&cThis bundle does not exist! check the databases!"
+  Bundle_occupy: '&cBundle is being occupied!'
+  Upgrade_command_not_item: '&cMainHand item is not a bundle!'

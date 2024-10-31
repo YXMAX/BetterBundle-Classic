@@ -1,0 +1,83 @@
+Bundle:
+  Display:
+    Name: '&e收纳袋'
+    Lore:
+      - '&f可存储武器/物品 便利玩家野外生存'
+      - '&6Shift+F &f打开收纳袋升级菜单'
+GUI:
+  Bundle:
+    Title: '收纳袋 %bundle_id%'
+    Locked: '&c已锁定'
+  Slotupgrade:
+    Title: '升级选项 #%upgrade_page%'
+    Bundle:
+      Name: '&a收纳袋升级点数: &e%betterbundle_coin%'
+      Lore:
+        - '&f使用点数可对收纳袋进行扩展'
+        - '&f每升级一级 可扩展一格存储空间'
+    Locked:
+      Name: '&aLevel.&6%upgrade_level% &f[&cLocked&f]'
+      Lore:
+        - '&f你尚未到达该等级'
+        - '&f前提: 到达 %pre_level% 级'
+        - ''
+        - '&f所需点数: &c%require_coin%'
+    Unlocked:
+      Name: '&aLevel.&6%upgrade_level% &f[&aUpgradable&f]'
+      Lore:
+        - '&f你当前可升级为该等级'
+        - '&f点击升级 并获得一格存储空间'
+        - ''
+        - '&b所需点数: &a%require_coin%'
+    Upgraded:
+      Name: '&aLevel.&6%upgrade_level% &f[&6Upgraded&f]'
+      Lore:
+        - '&f你已升级该等级'
+        - '&f相应格数的存储空间已解锁'
+    Previous:
+      Name: '&c上一页'
+    Next:
+      Name: '&a下一页'
+
+Messages:
+  Nopermission: "&c你没有使用该命令的权限!"
+  Reload: "&a插件已重载..."
+  Nomode: "&c请输入正确收纳袋类型 (Massive/Huge/Large/Medium/Tiny/Mini)"
+  Noupgrade: "&c请输入收纳袋是否允许升级 (true/false)"
+  Nomaxslot: "&c请输入收纳袋最高升级的大小 (18/27/36/45/54)"
+  Unknown: "&c未知参数!"
+  Massive_error: "&c设置54格大小收纳袋无法使用收纳袋升级 请重新设置!"
+  Maxslot_error: "&c请输入大于当前收纳袋类型的值以确保可升级 (9的倍数) !"
+  Noputbundle: "&c不允许将收纳袋放入收纳袋中!"
+  Noputhelmet: "&c不允许将收纳袋放入头盔槽中!"
+  Player_error: "&c未知玩家."
+  Upgrade_false: "&c该收纳袋不允许升级!"
+  Upgrade_true: "&a打开升级选项菜单..."
+  Upgrade_success: "&a成功将 &e收纳袋 [%bundle_id%] &a升级至 &b%upgrade_level% &a级!"
+  Upgrade_fail: "&c点数不足 无法升级收纳袋[%bundle_id%]"
+  Get_bundle_success_third: "&a玩家 %player% 获得收纳袋 [%bundle_id%]"
+  Info_player_empty: "&c请输入相应的玩家名"
+  Info_fail: "&c无法找到玩家 %player% 的收纳袋信息"
+  Info_title: "&e查询玩家 &f%player% &e详情如下:"
+  Info_detail: "&f- &e收纳袋[ %info_bundle_id% ]: 基础格数:&a%info_bundle_base_slot% &e收纳袋等级:&a%info_bundle_level%  &e最大格数:&a%info_bundle_max_slot% &e可否升级:&a%info_bundle_upgradable%"
+  Check_id_empty: "&c请输入相应的ID"
+  Check_not_id: "&c非法ID!"
+  Check_unknown_id: "&c不存在 ID:%check_id% 的收纳袋"
+  Check_success: "&a成功打开 &e收纳袋[%check_id%]"
+  Get_bundle_success_player: "&a获得收纳袋 [%bundle_id%]"
+  Onlyplayer: "&c该操作仅玩家可用.."
+  Give_error_type: "&c请输入正确的给予类型"
+  Give_error_onlineplayer: "&c请输入正确的在线玩家名"
+  Give_error_player: "&c请输入正确的玩家名"
+  Give_not_id: "&c非法ID"
+  Give_not_num: "&c非法数字"
+  Give_id_not_exist: "&c该ID的收纳袋不存在"
+  Give_coin_success: "&a成功为玩家 &f%player% &a给予 &e%give_coin% &a升级点数"
+  Give_coin_player_msg: "&a你收到了 &e%give_coin% &a升级点数"
+  Give_bundle_success: "&a成功为玩家 &f%player% &a给予 &e收纳袋 [%bundle_id%]"
+  Give_bundle_player_msg: "&a你收到了 &e收纳袋 [%bundle_id%]"
+  Open_upgrade_menu: "&e已打开收纳袋 [%bundle_id%] 的 &6升级 &e菜单"
+  Open_bundle: "&e已打开收纳袋 [%bundle_id%].."
+  Bundle_not_exist: "&c该收纳袋不存在！请检查数据库"
+  Bundle_occupy: '&c收纳袋正在被占用!'
+  Upgrade_command_not_item: '&c需手持收纳袋使用该指令以打开升级菜单!'
